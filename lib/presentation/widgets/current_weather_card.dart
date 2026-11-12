@@ -23,10 +23,10 @@ class CurrentWeatherCard extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 24),
       decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.15),
+        color: const Color(0x26FFFFFF),
         borderRadius: BorderRadius.circular(24),
         border: Border.all(
-          color: Colors.white.withValues(alpha: 0.25),
+          color: const Color(0x40FFFFFF),
         ),
       ),
       child: Column(
@@ -71,7 +71,7 @@ class CurrentWeatherCard extends StatelessWidget {
           ),
           const SizedBox(height: 20),
           Divider(
-            color: Colors.white.withValues(alpha: 0.2),
+            color: const Color(0x33FFFFFF),
             height: 1,
           ),
           const SizedBox(height: 16),

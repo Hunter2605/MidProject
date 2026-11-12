@@ -17,10 +17,10 @@ class DailyForecastList extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.15),
+        color: const Color(0x26FFFFFF),
         borderRadius: BorderRadius.circular(24),
         border: Border.all(
-          color: Colors.white.withValues(alpha: 0.2),
+          color: const Color(0x33FFFFFF),
         ),
       ),
       child: Column(
@@ -39,8 +39,8 @@ class DailyForecastList extends StatelessWidget {
             shrinkWrap: true,
             physics: const NeverScrollableScrollPhysics(),
             itemCount: daily.length,
-            separatorBuilder: (_, __) => Divider(
-              color: Colors.white.withValues(alpha: 0.15),
+            separatorBuilder: (_, __) => const Divider(
+              color: Color(0x26FFFFFF),
               height: 14,
             ),
             itemBuilder: (context, index) {

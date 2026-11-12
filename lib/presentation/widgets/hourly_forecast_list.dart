@@ -57,10 +57,10 @@ class HourlyForecastList extends StatelessWidget {
                 width: 72,
                 padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 6),
                 decoration: BoxDecoration(
-                  color: Colors.white.withValues(alpha: isCurrent ? 0.25 : 0.12),
+                  color: isCurrent ? const Color(0x40FFFFFF) : const Color(0x1FFFFFFF),
                   borderRadius: BorderRadius.circular(18),
                   border: Border.all(
-                    color: Colors.white.withValues(alpha: isCurrent ? 0.5 : 0.15),
+                    color: isCurrent ? const Color(0x80FFFFFF) : const Color(0x26FFFFFF),
                   ),
                 ),
                 child: Column(

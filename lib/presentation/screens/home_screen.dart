@@ -111,9 +111,9 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Container(
               height: 46,
               decoration: BoxDecoration(
-                color: Colors.white.withValues(alpha: 0.15),
+                color: const Color(0x26FFFFFF),
                 borderRadius: BorderRadius.circular(23),
-                border: Border.all(color: Colors.white.withValues(alpha: 0.25)),
+                border: Border.all(color: const Color(0x40FFFFFF)),
               ),
               child: TextField(
                 controller: _searchController,
@@ -123,7 +123,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 onSubmitted: _submitSearch,
                 decoration: InputDecoration(
                   hintText: 'Поиск города...',
-                  hintStyle: TextStyle(color: Colors.white.withValues(alpha: 0.6)),
+                  hintStyle: const TextStyle(color: Color(0x99FFFFFF)),
                   prefixIcon: const Icon(CupertinoIcons.search, color: Colors.white70, size: 18),
                   suffixIcon: IconButton(
                     icon: const Icon(CupertinoIcons.arrow_right, color: Colors.white70, size: 18),
@@ -140,7 +140,7 @@ class _HomeScreenState extends State<HomeScreen> {
             onPressed: _showCitySearchDialog,
             icon: const Icon(Icons.location_city, size: 20),
             style: IconButton.styleFrom(
-              backgroundColor: Colors.white.withValues(alpha: 0.15),
+              backgroundColor: const Color(0x26FFFFFF),
               foregroundColor: Colors.white,
             ),
           ),
